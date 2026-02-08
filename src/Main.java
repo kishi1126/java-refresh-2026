@@ -43,12 +43,12 @@ public class Main {
     }
 
     private static void listUsers() {
-    if (users.isEmpty()) {
+        if (users.isEmpty()) {
         System.out.println("ユーザーがいません");
         return;
     }
-    System.out.println("--- 一覧 ---");
-    users.keySet().stream().sorted().forEach(id -> System.out.println(users.get(id)));
+        System.out.println("--- 一覧 ---");
+        users.keySet().stream().sorted().forEach(id -> System.out.println(users.get(id)));
     }
 
     private static void updateUser() {
